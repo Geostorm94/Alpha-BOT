@@ -1,9 +1,12 @@
 # Alpha BOT
 
+
 > __[1.0.0] Initialisation du projet__
 1. Mise en place de la structure du code
 2. Ajout des fonctionnalités de base
 3. Configuration du bot
+
+
 
 > __[1.1.4] Mise à jour__
 
