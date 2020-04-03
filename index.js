@@ -3,9 +3,23 @@ const { TOKEN, PREFIX } = require('./config');
 const fs = require("fs");
 const client = new Client();
 
+client.login(TOKEN);
 client.PREFIX = PREFIX;
 
 client.commands = new Collection();
+
+
+fs.readdir("./events/", (err, files) => {
+
+    if(err) return console.err;
+    files.forEach(file => {
+        if(!file.endsWith(".js")) return undefined;
+        const event = require(`./events/${file}`)
+        const eventName = file.split('.')[0];
+        client.on(eventName, event.bind(null, client));
+    })
+
+});
 
 fs.readdir("./commands/", (err, files) => {
 
@@ -18,11 +32,6 @@ fs.readdir("./commands/", (err, files) => {
     })
 
 });
-
-client.on("ready", () => require("./events/ready.js")(client));
-client.on('message', msg => require("./events/message.js")(client, msg));
-
-client.login(TOKEN);
 
 client.on("error", console.error);
 client.on("warn", console.warn);
