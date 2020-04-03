@@ -1,10 +1,10 @@
 {
   "name": "alpha-bot",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Alpha BOT",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Erreur : Une erreur s'est produite !"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
