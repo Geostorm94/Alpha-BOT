@@ -1,0 +1,22 @@
+{
+  "name": "alpha-bot",
+  "version": "0.1.0",
+  "description": "Alpha BOT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Erreur : Une erreur s'est produite !"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Geostorm94/Alpha-BOT.git"
+  },
+  "author": "Geostorm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Geostorm94/Alpha-BOT/issues"
+  },
+  "homepage": "https://github.com/Geostorm94/Alpha-BOT#readme",
+  "dependencies": {
+    "discord.js": "^12.1.1"
+  }
+}
