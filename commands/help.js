@@ -7,7 +7,7 @@ exports.run = (client, message) => {
         .addField("`help` → **" + client.PREFIX + "help**", "Affiche la liste des commandes")
         .addField("`karma` → **" + client.PREFIX + "karma** _{loup / griffon}_", "Permet de définir son karma")
         .addField("`nickname` → **" + client.PREFIX + "nickname** _{Pseudo}_", "Permet de modifier son pseudonyme")
-        .addField("`rand` → **" + client.PREFIX + "rand**", "Effectue un jet de dé à 100 faces")
+        .addField("`rand` → **" + client.PREFIX + "rand** _{Nombre}_", "Effectue un jet de dé. _(2: pile/face | 3: chifoumi | 4+: jet de dés)_")
         .addField("`scrabble` → **" + client.PREFIX + "scrabble**", "Distribue des lettres afin de former un mot")
         .setFooter("Dragonium, jeu de rôle en ligne gratuit (WMORPG/MMORPG)")
     message.channel.send(embed)
