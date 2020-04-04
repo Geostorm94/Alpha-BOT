@@ -4,7 +4,7 @@ const fs = require("fs");
 const client = new Client();
 
 client.login(TOKEN);
-client.PREFIX = PREFIX;
+client.PREFIX = '!';
 
 client.commands = new Collection();
 
