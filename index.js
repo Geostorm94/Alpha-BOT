@@ -31,7 +31,3 @@ fs.readdir("./commands/", (err, files) => {
     })
 
 });
-/*
-client.on('message', message => {
-    
-}) */
