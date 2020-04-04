@@ -12,5 +12,4 @@ exports.run = (client, message) => {
         .setDescription("Avatar de **" + UserAvatar.tag + "**")
         .setImage(message.guild.member(UserAvatar).user.avatarURL({ dynamic: true }))
     message.channel.send(embed)
-    
 };

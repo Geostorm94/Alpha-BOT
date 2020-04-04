@@ -31,5 +31,7 @@ fs.readdir("./commands/", (err, files) => {
     })
 
 });
-
-client.on("error", err => console.log(err));
+/*
+client.on('message', message => {
+    
+}) */
