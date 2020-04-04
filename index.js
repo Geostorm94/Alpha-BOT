@@ -2,8 +2,10 @@ const { Client, Collection, MessageEmbed } = require('discord.js');
 const { TOKEN, PREFIX } = require('./config');
 const fs = require("fs");
 const client = new Client();
+require("dotenv").config();
 
-client.login(TOKEN);
+client.login(process.env.TOKEN);
+
 client.PREFIX = '!';
 
 client.commands = new Collection();
