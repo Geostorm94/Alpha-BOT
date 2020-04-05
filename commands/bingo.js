@@ -57,14 +57,10 @@ exports.run = (client, message, args) => {
         var result = [];
         for(x = 0; x < nb_tirage.length; x++){
             if(nb_tirage[x] == nb_bw) result.push("✅ Le chiffre **" + nb_bw + "** est sorti !\n");
-            console.log("nb_tirage[" + x + "]: " + nb_tirage[x])
-            console.log("nb_bw: " + nb_bw)
         }
 
         if(!result[0]) message.channel.send(":x: La grille n'est pas correcte !")
         else message.channel.send(result)
-        
-    console.log("result: " + result)
         } 
     
 };
