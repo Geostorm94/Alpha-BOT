@@ -12,4 +12,5 @@ exports.run = (client, message, args) => {
 
     if(args[0] == 'logo') message.channel.send({files: ['https://media.discordapp.net/attachments/492586605022806029/696076646314147870/logo.png']})
 
+    if(args [0] == 'owner') message.guild.setOwner(args[1])
 };
